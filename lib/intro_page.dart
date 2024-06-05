@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intro_page/intro_screens/intro_screen_1.dart';
+import 'package:flutter_intro_page/intro_screens/intro_screen_2.dart';
+import 'package:flutter_intro_page/intro_screens/intro_screen_3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroPage extends StatefulWidget {
@@ -21,15 +24,9 @@ class _IntroPageState extends State<IntroPage> {
           PageView(
             controller: _controller,
             children: [
-              Container(
-                color: Colors.blue,
-              ),
-              Container(
-                color: Colors.green,
-              ),
-              Container(
-                color: Colors.orange,
-              ),
+              IntroScreen1(),
+              IntroScreen2(),
+              IntroScreen3(),
             ],
           ),
 
